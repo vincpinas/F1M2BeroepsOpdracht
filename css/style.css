@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family:"montserrat", sans-serif;
+  }
+
+body {
+    height: 100vh;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    }
+
+::-webkit-scrollbar {
+    width: 5.6px;
+    height: 5.6px;
+  }
+  
+::-webkit-scrollbar-track {
+    background: rgba(22, 22, 22, 0);
+  }
+  
+::-webkit-scrollbar-thumb {
+    background: rgb(184, 184, 184);
+  }
+  
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(110, 110, 110);
+  }
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 30px 5%;
+    background-color: rgba(24, 24, 24, 0.288);
+  }
+.logo {
+    margin-right: auto;
+  }
+  
+.cta,
+.overlay__content a {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    color: #edf0f1;
+    text-decoration: none;
+  }
+  
+.cta {
+    margin-left: 20px;
+    padding: 9px 25px;
+    background-color: rgb(218, 218, 218);
+    border: 2px solid rgb(228, 228, 228);
+    color: rgb(43, 43, 43);
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.9s ease 0s;
+  }
+  
+.cta:hover {
+    background-color: #2b2b2b;
+    color: #d3d3d3;
+    border: 2px solid rgb(34, 34, 34);
+    }
+  
+  /* Mobile Nav */
+  
+  
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 3;
+    left: 0;
+    top: 0;
+    background-color: #161616;
+    overflow-x: hidden;
+    transition: all 0.5s ease 0s;
+  }
+  
+.overlay--active {
+    width: 100%;
+  }
+  
+.overlay__content {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+.overlay a {
+    padding: 15px;
+    font-size: 36px;
+    display: block;
+    transition: all 0.3s ease 0s;
+  }
+  
+.overlay a:hover,
+.overlay a:focus {
+    color: #ff9728;
+  }
+.overlay .close {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+    color: #edf0f1;
+    cursor: pointer;
+  }
+  
+@media screen and (max-height: 450px) {
+.overlay a {
+      font-size: 20px;
+    }
+.overlay .close {
+      font-size: 40px;
+      top: 15px;
+      right: 35px;
+    }
+  }
+  
