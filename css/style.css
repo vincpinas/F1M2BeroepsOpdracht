@@ -15,15 +15,15 @@ body {
     width: 5.6px;
     height: 5.6px;
   }
-  
+
 ::-webkit-scrollbar-track {
     background: rgba(22, 22, 22, 0);
   }
-  
+
 ::-webkit-scrollbar-thumb {
     background: rgb(184, 184, 184);
   }
-  
+
 ::-webkit-scrollbar-thumb:hover {
     background: rgb(110, 110, 110);
   }
@@ -38,7 +38,7 @@ header {
 .logo {
     margin-right: auto;
   }
-  
+
 .cta,
 .overlay__content a {
     font-family: "Montserrat", sans-serif;
@@ -46,7 +46,7 @@ header {
     color: #edf0f1;
     text-decoration: none;
   }
-  
+
 .cta {
     margin-left: 20px;
     padding: 9px 25px;
@@ -57,16 +57,16 @@ header {
     cursor: pointer;
     transition: all 0.9s ease 0s;
   }
-  
+
 .cta:hover {
     background-color: #2b2b2b;
     color: #d3d3d3;
     border: 2px solid rgb(34, 34, 34);
     }
-  
+
   /* Mobile Nav */
-  
-  
+
+
 .overlay {
     height: 100%;
     width: 0;
@@ -78,11 +78,11 @@ header {
     overflow-x: hidden;
     transition: all 0.5s ease 0s;
   }
-  
+
 .overlay--active {
     width: 100%;
   }
-  
+
 .overlay__content {
     display: flex;
     height: 100%;
@@ -90,14 +90,14 @@ header {
     align-items: center;
     justify-content: center;
   }
-  
+
 .overlay a {
     padding: 15px;
     font-size: 36px;
     display: block;
     transition: all 0.3s ease 0s;
   }
-  
+
 .overlay a:hover,
 .overlay a:focus {
     color: #ff9728;
@@ -110,4 +110,31 @@ header {
     color: #edf0f1;
     cursor: pointer;
   }
-  
+
+  .slideshow{
+    width: 1275px;
+    height: auto;
+    padding: 5px;
+    box-sizing: border-box;
+    position: relative;
+    margin: 0px auto;
+  }
+  .slideshow img{
+    position: absolute;
+    animation: slideshow 20s infinite;
+    opacity: 0;
+    width: 1275px;
+    height: auto;
+    margin: 0px auto;
+  }
+  @keyframes slideshow{
+    25%{opacity: 1;
+    }
+    45%{
+      opacity: 0;
+    }
+  }
+.slideshow img:nth-child(4){animation-delay:5s;}
+.slideshow img:nth-child(3){animation-delay:10s;}
+.slideshow img:nth-child(2){animation-delay:15s;}
+.slideshow img:nth-child(1){animation-delay:20s;}
