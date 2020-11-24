@@ -33,7 +33,7 @@ header {
     justify-content: flex-end;
     align-items: center;
     padding: 30px 5%;
-    background-color: rgba(24, 24, 24, 0.288);
+    background-color: rgba(24, 24, 24, 0.616);
   }
 .logo {
     margin-right: auto;
@@ -112,19 +112,19 @@ header {
   }
 
   .slideshow{
-    width: 1275px;
-    height: auto;
-    padding: 5px;
+    width: 100vw;
+    height: 100vh;
     box-sizing: border-box;
     position: relative;
     margin: 0px auto;
+    overflow-x: hidden;
   }
   .slideshow img{
     position: absolute;
     animation: slideshow 20s infinite;
     opacity: 0;
-    width: 1275px;
-    height: auto;
+    width: 100vw;
+    height: 100vh;
     margin: 0px auto;
   }
   @keyframes slideshow{
