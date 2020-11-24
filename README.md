@@ -31,3 +31,4 @@ The following will be a list of features we made on the site & some other intere
 | 🐛 ```:bug:```                | Used when fixing a bug |
 | 📦 ```:package:```            | Used when installing dependencies or adding large files |
 | 📝 ```:memo:```               | Used when writing documents or comments. |
+| 🎨 ```:art:```                | Used when changing or adding a visual element |
