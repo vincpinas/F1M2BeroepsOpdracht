@@ -25,9 +25,9 @@ The following will be a list of features we made on the site & some other intere
 
 | Emoji                    | Description |
 | -----------              | ----------- |
-| 🔎 :mag_right:          | Used when a new link is added |
-| 🔥  :fire:               | Used when removing chuncks of code or files |
-| 💙 :blue_heart:         | Used when adding new code |
-| 🐛 :bug:                | Used when fixing a bug |
-| 📦 :package:            | Used when installing dependencies or adding large files |
-| 📝 :memo:               | Used when writing documents or comments. |
+| 🔎 ```:mag_right:```          | Used when a new link is added |
+| 🔥  ```:fire:```               | Used when removing chuncks of code or files |
+| 💙 ```:blue_heart:```         | Used when adding new code |
+| 🐛 ```:bug:```                | Used when fixing a bug |
+| 📦 ```:package:```            | Used when installing dependencies or adding large files |
+| 📝 ```:memo:```               | Used when writing documents or comments. |
