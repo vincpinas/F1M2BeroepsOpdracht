@@ -1,4 +1,4 @@
-@media screen and (max-height: 450px) {
+@media screen and (max-width: 450px) {
     .overlay a {
           font-size: 20px;
         }
@@ -7,4 +7,27 @@
           top: 15px;
           right: 35px;
         }
+    .cta {
+          padding: 4px 15px;
+        }
+    header {
+      padding: 15px 5%;
+    }
+    .contact_cta {
+      font-size: 0.8em;
+    }
       }
+
+@media screen and (max-width: 450px) {
+  .textBox {
+    font-size: 0.8em;
+    margin-top: 10%;
+  }
+}
+
+@media screen and (max-height: 670px) {
+  .textBox {
+    font-size: 0.66em;
+    margin-right: 2%;
+  }
+}
