@@ -45,6 +45,7 @@ section {
   min-height: 100vh;
   padding: 100px;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
   background-color: #0062be;
@@ -52,7 +53,8 @@ section {
 }
 
 header {
-    position: absolute;
+  position: absolute;
+    display: flex;
     top: 0;
     left: 0;
     width: 100%;
@@ -146,7 +148,7 @@ header {
 
 .overlay a:hover,
 .overlay a:focus {
-    color: #ff9728;
+    color: #0062be;
   }
 .overlay .close {
     position: absolute;
@@ -166,6 +168,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 10rem;
 }
 
 .content .textBox {
