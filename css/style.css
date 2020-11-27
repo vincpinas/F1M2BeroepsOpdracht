@@ -55,7 +55,8 @@ section {
 }
 
 header {
-  position: absolute;
+    position: fixed;
+    z-index: 5;
     display: flex;
     top: 0;
     left: 0;
