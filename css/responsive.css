@@ -46,3 +46,15 @@
     display: none;
   }
 }
+
+@media (max-width: 1000px) {
+  .slider {
+    display: none;
+  }
+  .slider img {
+    display: none;
+  }
+  .mySlides {
+    display: none;
+  }
+}
