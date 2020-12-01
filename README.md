@@ -10,12 +10,13 @@ To navigate through this project you can use the following useful links.
 * ***Live Site:***
 
 ---
-The following will be a list of features we made on the site & some other interesting things.
+The following will be a list of features we made on the site & some other information.
 ### ****List of features****
-* Quiz
-* Interactive slide show
-* Menu Overlay
-
+* Interactive Quiz <span style="color:#FF2319">(Due for a later update)</span>
+* Slide Show <span style="color:#27C400">(Made in week 2)</span>
+* Menu Overlay <span style="color:#27C400">(Made in week 1)</span>
+* Automatic Review Slider <span style="color:#FFA600">(In progress)</span>
+* Light & Dark Mode Switch <span style="color:#FF2319">(Optional, might not be added)</span>
 
 [Landing Page Trello Board]: https://trello.com/b/PJkzGkD8/f1m2-landing-page-amy-vincent
 
