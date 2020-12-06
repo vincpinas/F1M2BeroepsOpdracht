@@ -59,11 +59,13 @@
 }
 
 .numbertext {
-    color: #1b1b1b;
+    color: #79c5ff;
+    font-weight: 700;
     font-size: 12px;
     padding: 8px 12px;
     position: absolute;
     top: 0;
+    right: 0;
   }
   
   /* Fading animation */

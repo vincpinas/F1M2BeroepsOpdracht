@@ -131,7 +131,7 @@ header {
   }
 
 .overlay--active {
-    width: 20%;
+    width: 20rem;
   }
 
 .overlay__content {
@@ -201,29 +201,79 @@ header {
   display: inline-block;
   margin-top: 20px;
   background-color: rgb(31, 31, 31);
+  border: 2px solid rgb(34, 34, 34);
   color: rgb(228, 228, 228);
-  border-radius: 50px;
+  border-radius: 5px;
   padding: 8px 20px;
-  transition: 0.8s;
+  transition: all 0.8s ease 0s;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 1px;
   margin-bottom: 5rem;
+  box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.261);
 }
 
 .content .textBox a:hover {
-  background-color: rgb(228, 228, 228);
+  background-color: rgb(208, 208, 208);
+  border: 2px solid rgb(182, 182, 182);
   color: rgb(43, 43, 43);
-  font-size: 1.2em;
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.261);
 }
 
-.review-slider {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-color: rgb(228, 228, 228);
-  padding: 20px 15px;
-  margin-bottom: 10rem;
-  margin-top: 6rem;
+
+.reviewslider {
+  height: 75px;
+  background-color: rgb(218, 218, 218);
 }
+
+.reviewslider h1,
+.reviewslider p {
+  color: #1c1c1c;
+  font-weight: 600;
+}
+
+.reviewslider h1 {
+  font-size: 26px;
+}
+
+.reviewslider p {
+  font-size: 18px;
+}
+
+.r-wrap {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.r-move {
+  display: flex;
+  position: relative;
+  top: 0;
+  right: 0;
+}
+
+.review {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+  padding: 10px;
+  flex-shrink: 0;
+  background-color: rgb(218, 218, 218);
+}
+
+@keyframes reviews {
+  0% { right: 0; }
+  11% { right: 0; }
+  22% { right: 100%; }
+  33% { right: 100%; }
+  44% { right: 200%; }
+  55% { right: 200%; }
+  66% { right: 300%; }
+  77% { right: 300%; }
+  88% { right: 0; }
+}
+
+.r-move { animation: reviews linear 25s infinite;}
