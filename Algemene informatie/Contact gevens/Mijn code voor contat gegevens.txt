@@ -1,0 +1,26 @@
+<div class="Contact">
+  <h2>Contact gegevens </h2>
+  <br>
+  <p></p>
+  <div class="AdressLam">
+    <h3>Adress van het Lam</h3>
+    <br>
+    <p>Keukenhof 14</p>
+    <p>2161 AN Lisse</p>
+    <br>
+  </div>
+  <div class="AdressPostbus">
+    <p>Postbus 224</p>
+    <p>2170 AE Sassemheim</p>
+    <br>
+    <br>
+  </div>
+  <div class="Telefoonnummer">
+    <p>Telefoonnummer:</p>
+    <p>0252508800</p>
+  </div>
+  <div class="Emailadress">
+    <p>Emailadress:</p>
+    <p>info@lamlisse.nl</p>
+  </div>
+</div>
