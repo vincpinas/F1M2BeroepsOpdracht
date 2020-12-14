@@ -1,3 +1,4 @@
+// Slide Show
 let slideIndex = 1;
 let myTimer;
 let timeout = 5000;
@@ -32,3 +33,12 @@ function showSlides(n){
   }
   slides[slideIndex-1].style.display = "block";
 }
+
+
+// Light & Dark Mode Switch
+const chk = document.getElementById('chk');
+
+chk.addEventListener('change', () => {
+    document.body.classList.toggle('light');
+    document.p.classList.toggle('dark');
+});
