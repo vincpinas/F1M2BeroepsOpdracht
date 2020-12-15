@@ -1,0 +1,40 @@
+Hierin komen de onderwerpen aanbod die er in de footer komen te staan
+
+Direct naar:
+Home--> {https://www.lamlisse.nl/}
+Bezoek -->{https://www.lamlisse.nl/bezoek-het-lam/}
+Tickets --> {https://www.lamlisse.nl/tickets/}
+Nieuws --> {https://www.lamlisse.nl/laatste-nieuws/}
+Omgeving -> {https://www.lamlisse.nl/omgeving/}
+Organisatie --> {https://www.lamlisse.nl/ontdek-het-lam/de-organisatie-achter-het-lam/}
+Contact --> {https://www.lamlisse.nl/contact/}
+
+Over het Lam
+kunstenaars:
+https://www.lamlisse.nl/kunstenaar
+
+Video's:
+https://www.lamlisse.nl/miniserie/hoe-werkt-het-lam/#
+
+thuis museum:
+https://www.lamlisse.nl/thuismuseum/
+
+Jouw kunst in Het Lam:
+https://www.lamlisse.nl/jouw-kunst-in-het-lam/
+
+Veelgstelde vragen:
+https://www.lamlisse.nl/veelgestelde-vragen/
+
+Organisatie:
+https://www.lamlisse.nl/ontdek-het-lam/de-organisatie-achter-het-lam/
+
+Vacatures:
+https://www.lamlisse.nl/vacatures/
+
+Pers:
+https://www.lamlisse.nl/pers/
+
+Mijn Favoriete:
+https://bezoekers.lamlisse.nl/customer/account/login
+
+er moet ook een nieuws brief komen.
