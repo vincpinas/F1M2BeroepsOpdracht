@@ -16,14 +16,14 @@
  
 </head>
 <body>
-    <section class="content-section">
+    <section id="content-section">
         <div id="mobile__menu" class="overlay">
             <a class="close">&times;</a>
             <div class="overlay__content">
-                <a href="">Home</a>
-                <a href="">About</a>
-                <a href="">Quiz</a>
-                <a href="">Contact</a>
+                <a id="Home">Home</a>
+                <a id="About">About</a>
+                <a id="">Quiz</a>
+                <a id="">Contact</a>
                 <div>
                     <input type="checkbox" class="checkbox" id="chk">
                     <label class="label" for="chk">
@@ -37,7 +37,7 @@
         <header>
             <a class="logo" href="index.html"><img src="afbeeldingen/LAM-Lisse-logo-white.svg" alt="LAM LOGO"></a>
             <a class="contact_cta" href="https://www.lamlisse.nl/tickets/">Tickets</a><!-- Contact Button -->
-            <p class="menu cta"><i class="fa fa-bars"></i></p><!-- Mobile Menu Button -->
+            <a class="menu cta"><i class="fa fa-bars"></i></a><!-- Mobile Menu Button -->
         </header>
         <script type="text/javascript" src="js/mobilenav.js"></script>
             <div class="content">
@@ -48,7 +48,7 @@
                     kunstwerken aan gekozen door gerespecteerde curators.
                     <br> Geschikt voor elke leeftijd, ook leuk voor de familie!
                     </p>
-                    <a href="">Read More</a>
+                    <a id="readmore">Read More</a>
                 </div>
                     <div class="slider"> <!--hier is de slide show-->
                         <div class="mySlides fade">
@@ -94,6 +94,10 @@
         </div>
     </div></div>
 </div>
+
+<section id="about-section">
+    <p></p>
+</section>
 <script type="text/javascript" src="js/app.js"></script>
 </body>
 </html>

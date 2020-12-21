@@ -17,30 +17,15 @@ body {
     flex-direction: column;
     background-color: #2e2e2e;
     }
-a {
-  text-decoration: none;
+
+body {
+  --nav-load: 500ms;
+  --nav-link-load: 400ms;
+  --article-load-delay: calc(var(--nav-load) + var(var(--nav-link-load)))
 }
 
-::-webkit-scrollbar {
-    width: 5.6px;
-    height: 5.6px;
-  }
-
-::-webkit-scrollbar-track {
-    background: rgba(22, 22, 22, 0);
-  }
-
-::-webkit-scrollbar-thumb {
-    background: rgb(184, 184, 184);
-  }
-
-::-webkit-scrollbar-thumb:hover {
-    background: rgb(110, 110, 110);
-  }
-
-
   /* Menu CSS Section */
-.content-section {
+#content-section {
   position: relative;
   width: 100%;
   min-height: 100vh;
@@ -65,7 +50,22 @@ header {
     align-items: center;
     padding: 20px 3%;
     background-color: rgba(24, 24, 24, 0.33);
+    animation: nav-load var(--nav-load) ease-out;
   }
+
+header a {
+  animation-name: nav-link-load;
+  animation-duration: var(--nav-link-load);
+  animation-timing-function: ease-in;
+  animation-delay: var(--nav-load);
+  animation-fill-mode: forwards;
+  transform: scale(0);
+}
+
+header a:first-child {
+  animation-delay: calc(var(--nav-load) + var(--nav-link-load));
+}
+
 .logo {
     margin-right: auto;
     max-width: 300px;
@@ -176,6 +176,7 @@ header {
 .content .textBox {
   position: relative;
   max-width: 600px;
+  animation: article-load 300ms ease-in var(--article-load-delay);
 }
 
 .content .textBox h2 {
@@ -285,7 +286,7 @@ header {
 
 /* Light/Dark Mode Switch */
 body.light {
-	background-color: #b1b1b1;
+	background-color: #d3d3d3;
 }
 
 .checkbox {
@@ -331,4 +332,31 @@ body.light {
 
 .fa-sun {
 	color: #f39c12;
+}
+
+/* On Load Animations */
+/* ---------------------------------------------------- */
+
+@keyframes nav-load {
+  0% {
+    transform: translateY(-100%);
+  }
+
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+@keyframes nav-link-load{
+  0% {
+    transform: scale(0);
+  }
+
+  90% {
+    transform: scale(1.1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
 }

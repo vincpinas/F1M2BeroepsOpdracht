@@ -59,3 +59,23 @@
   }
 }
 
+::-webkit-scrollbar {
+  width: 5.6px;
+  height: 5.6px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(22, 22, 22, 0);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(184, 184, 184);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(110, 110, 110);
+}
+
+a {
+  text-decoration: none;
+}

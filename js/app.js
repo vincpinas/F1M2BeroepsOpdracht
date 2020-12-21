@@ -42,3 +42,28 @@ chk.addEventListener('change', () => {
     document.body.classList.toggle('light');
     document.p.classList.toggle('dark');
 });
+
+
+// SMOOTH SCROLLING
+// About Section
+const readmore = document.getElementById('readmore');
+const menuabout = document.getElementById('About')
+const aboutsection = document.querySelector("#about-section");
+
+menuabout.addEventListener('click', () => {
+  aboutsection.scrollIntoView({behavior: 'smooth', block: 'end'})
+});
+
+readmore.addEventListener('click', () => {
+  aboutsection.scrollIntoView({behavior: 'smooth', block: 'end'});
+});
+
+
+
+// Home
+const Home = document.getElementById('Home');
+const startsection = document.querySelector("#content-section");
+
+Home.addEventListener('click', () => {
+  startsection.scrollIntoView({behavior:'smooth', block: 'start'})
+});
