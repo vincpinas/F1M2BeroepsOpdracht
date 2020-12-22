@@ -39,8 +39,7 @@ function showSlides(n){
 const chk = document.getElementById('chk');
 
 chk.addEventListener('change', () => {
-    document.body.classList.toggle('light');
-    document.p.classList.toggle('dark');
+    document.body.classList.toggle('bodylight');
 });
 
 

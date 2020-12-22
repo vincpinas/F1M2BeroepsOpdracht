@@ -176,7 +176,19 @@ header a:first-child {
 .content .textBox {
   position: relative;
   max-width: 600px;
-  animation: article-load 300ms ease-in var(--article-load-delay);
+  animation-name: text-load;
+  animation-duration: 400ms;
+  animation-delay: calc(var(--nav-link-load) + var(--nav-load) + 500ms);
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+
+.slider {
+  animation-name: slider-load;
+  animation-duration: 400ms;
+  animation-delay: calc(var(--nav-link-load) + var(--nav-load) + 800ms);
+  opacity: 0;
+  animation-fill-mode: forwards;
 }
 
 .content .textBox h2 {
@@ -285,9 +297,12 @@ header a:first-child {
 
 
 /* Light/Dark Mode Switch */
-body.light {
-	background-color: #d3d3d3;
+body.bodylight {
+  background-color: #d3d3d3;
+  color: #1c1c1c;
 }
+
+
 
 .checkbox {
 	opacity: 0;
@@ -358,5 +373,29 @@ body.light {
 
   100% {
     transform: scale(1);
+  }
+}
+
+@keyframes text-load {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes slider-load {
+  0% {
+    transform: translateY(40px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
   }
 }

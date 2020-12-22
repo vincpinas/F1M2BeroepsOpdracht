@@ -23,6 +23,13 @@
     font-size: 0.8em;
     margin-top: 10%;
   }
+  .review h1 {
+    font-size: 0.8em;
+  }
+
+  .review p {
+    font-size: 0.8em;
+  }
 }
 
 @media screen and (max-height: 670px) {
