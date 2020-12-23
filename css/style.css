@@ -15,7 +15,7 @@ body {
     background-position: center;
     display: flex;
     flex-direction: column;
-    background-color: #2e2e2e;
+    background-color: #1c1c1c;
     }
 
 body {
@@ -320,7 +320,8 @@ body.bodylight {
 	border-radius: 50px;
 	cursor: pointer;
 	display: flex;
-	align-items: center;
+  align-items: center;
+  text-align: center;
 	justify-content: space-between;
 	padding: 5px;
 	position: relative;
@@ -348,11 +349,11 @@ body.bodylight {
 
 
 .fa-moon {
-	color: #f1c40f;
+  color: #f1c40f;
 }
 
 .fa-sun {
-	color: #f39c12;
+  color: #f39c12;
 }
 
 /* On Load Animations */
