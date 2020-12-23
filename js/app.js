@@ -37,9 +37,11 @@ function showSlides(n){
 
 // Light & Dark Mode Switch
 const chk = document.getElementById('chk');
+const article = document.querySelector('#textlight')
 
 chk.addEventListener('change', () => {
     document.body.classList.toggle('bodylight');
+    article.classList.toggle('light')
 });
 
 
