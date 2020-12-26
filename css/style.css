@@ -244,12 +244,6 @@ header a:first-child {
   background-color: rgb(24, 24, 24);
 }
 
- .title-heading{
-  color:#f15025;
- }
- .title-subheading{
-  color: white;
- }
  .customer-card{
   padding-bottom: 1rem;
   padding-left: 1rem;
@@ -257,8 +251,10 @@ header a:first-child {
   position: relative;
   width: 60%;
  }
+
  .img-card{
   border-radius: 50%;
+  width: 130px;
   margin-bottom: 1rem;
   margin-top: -3rem;
  }

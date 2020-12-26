@@ -1,6 +1,6 @@
 @media screen and (max-width: 450px) {
     .overlay a {
-          font-size: 20px;
+          font-size: 25px;
         }
     .overlay .close {
           font-size: 40px;
@@ -8,13 +8,17 @@
           right: 35px;
         }
     .cta {
-          padding: 4px 15px;
+          padding: 4px 22px;
         }
     header {
       padding: 15px 5%;
     }
     .contact_cta {
       font-size: 0.8em;
+    }
+
+    .logo {
+      width: 70px;
     }
       }
 
@@ -51,6 +55,12 @@
   }
   .textBox p {
     display: none;
+  }
+}
+
+@media (max-width: 450px) {
+  .img-card {
+    width: 90px;
   }
 }
 
