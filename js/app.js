@@ -35,6 +35,53 @@ function showSlides(n){
 }
 
 
+
+
+// REVIEW SLIDER
+const customerImage = document.querySelector('#customer-img');
+const customerName = document.querySelector('#customer-name');
+const customerText = document.querySelector('#customer-text');
+let testimonialIndex = 0;
+const customers = [];
+
+// Create a new customer using a constructor
+function Customer(img, name, text) {
+    this.img = img
+    this.name = name
+    this.text = text
+}
+
+// Create new customer using the constructor function
+function createCustomer(img, name, text) {
+
+    let fullImg = `./afbeeldingen/customer-images/customer-${img}.jpg`
+    let customer = new Customer(fullImg, name, text)
+
+    customers.push(customer)
+}
+
+createCustomer(0, 'John', 'No Text')
+createCustomer(1, 'Sandy', 'No Text')
+createCustomer(2, 'Amy', 'No Text')
+createCustomer(3, 'Tyrell', 'No Text')
+createCustomer(4, 'Wanda', 'No Text')
+
+function testimonialSlides() {
+    testimonialIndex++   
+    if (testimonialIndex === customers.length) {testimonialIndex = 0} 
+    
+    customerImage.src = customers[testimonialIndex].img
+    customerName.textContent = customers[testimonialIndex].name
+    customerText.textContent = customers[testimonialIndex].text
+
+    setTimeout(testimonialSlides, 5000);
+  }
+
+testimonialSlides();
+
+
+
+
 // Light & Dark Mode Switch
 const chk = document.getElementById('chk');
 const article = document.querySelector('#textlight')
@@ -43,6 +90,8 @@ chk.addEventListener('change', () => {
     document.body.classList.toggle('bodylight');
     article.classList.toggle('light')
 });
+
+
 
 
 // SMOOTH SCROLLING

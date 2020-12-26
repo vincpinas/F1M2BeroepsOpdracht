@@ -234,69 +234,39 @@ header a:first-child {
   box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.261);
 }
 
-
-.reviewslider {
-  height: 75px;
-  background-color: rgb(218, 218, 218);
-}
-
-.reviewslider h1,
-.reviewslider p {
-  color: #1c1c1c;
-  font-weight: 600;
-}
-
-.reviewslider h1 {
-  font-size: 26px;
-}
-
-.reviewslider p {
-  font-size: 18px;
-}
-
-.r-wrap {
-  width: 100%;
-  overflow-x: hidden;
-}
-
-.r-move {
+.review-container {
+  margin-top: 5rem;
   display: flex;
-  position: relative;
-  top: 0;
-  right: 0;
-}
-
-.review {
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  color: rgb(209, 209, 209);
   text-align: center;
-  box-sizing: border-box;
-  height: 100%;
-  width: 100%;
-  padding: 10px;
-  flex-shrink: 0;
-  background-color: rgb(218, 218, 218);
+  background-color: rgb(24, 24, 24);
 }
 
-.norm-text {
-  font-weight: 300;
-}
-
-@keyframes reviews {
-  0% { right: 0; }
-  14% { right: 0; }
-  28% { right: 100%; }
-  42% { right: 100%; }
-  56% { right: 200%; }
-  70% { right: 200%; }
-  84% { right: 300%; }
-  99% { right: 300%; }
-  99.05% { right: 0; }
-  100% { right: 0}
-}
-
-.r-move { animation: reviews linear 25s infinite;}
-
+ .title-heading{
+  color:#f15025;
+ }
+ .title-subheading{
+  color: white;
+ }
+ .customer-card{
+  padding-bottom: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  position: relative;
+  width: 60%;
+ }
+ .img-card{
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  margin-top: -3rem;
+ }
+ 
+ .quote-icon{
+  font-size: 1.2rem;
+  color: #f15025;
+ }
 
 /* Light/Dark Mode Switch */
 body.bodylight {
