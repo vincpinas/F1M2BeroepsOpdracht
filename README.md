@@ -15,8 +15,8 @@ The following will be a list of features we made on the site & some other inform
 * Interactive Quiz <span style="color:#FF2319">(Due for a later update)</span>
 * Slide Show <span style="color:#27C400">(Made in week 2)</span>
 * Menu Overlay <span style="color:#27C400">(Made in week 1)</span>
-* Automatic Review Slider <span style="color:#FFA600">(In progress)</span>
-* Light & Dark Mode Switch <span style="color:#FF2319">(Optional, might not be added)</span>
+* Automatic Review Slider <span style="color:#FFA600">(Made in week 5)</span>
+* Light & Dark Mode Switch <span style="color:#FF2319">(Made in week 3/4)</span>
 
 [Landing Page Trello Board]: https://trello.com/b/PJkzGkD8/f1m2-landing-page-amy-vincent
 
