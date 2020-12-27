@@ -258,10 +258,20 @@ header a:first-child {
   margin-bottom: 1rem;
   margin-top: -3rem;
  }
+
+ .customer-name-style {
+   margin-bottom: 5px;
+   text-transform: uppercase;
+ }
  
  .quote-icon{
   font-size: 1.2rem;
   color: #f15025;
+ }
+
+ .revLoc {
+   margin-top: 10px;
+   font-size: 12px;
  }
 
 /* Light/Dark Mode Switch */

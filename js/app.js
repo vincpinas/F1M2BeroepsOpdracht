@@ -41,31 +41,32 @@ function showSlides(n){
 const customerImage = document.querySelector('#customer-img');
 const customerName = document.querySelector('#customer-name');
 const customerText = document.querySelector('#customer-text');
+const reviewLocation = document.querySelector('#reviewLocation');
 let testimonialIndex = 0;
 const customers = [];
 
 // Create a new customer using a constructor
-function Customer(img, name, text) {
+function Customer(img, name, text, revLoc) {
     this.img = img
     this.name = name
     this.text = text
+    this.revLoc = revLoc
 }
 
 // Create new customer using the constructor function
-function createCustomer(img, name, text) {
+function createCustomer(img, name, text, revLoc) {
 
     let fullImg = `./afbeeldingen/customer-images/customer-${img}.jpg`
-    let customer = new Customer(fullImg, name, text)
+    let customer = new Customer(fullImg, name, text, revLoc)
 
     customers.push(customer)
 }
 
-createCustomer(0, 'John', 'No Text')
-createCustomer(1, 'Sandy', 'No Text')
-createCustomer(2, 'Amy', 'No Text')
-createCustomer(3, 'Tyrell', 'No Text')
-createCustomer(4, 'Wanda', 'No Text')
+createCustomer(0, 'Ronald S', 'Bezochten het LAM. Wat een prachtig museum. Het gebouw, heel mooi van architectuur, is fraai gelegen in het park. De collectie is heel divers en gelinkt aan het thema voedsel. Mooi gepresenteerd en goed gedocumenteerd.', 'Review komt van: Trip Advisor')
+createCustomer(1, 'Joemate', 'Geweldig evenement en voor al onze mensen een ervaring die een blijvende positieve indruk over dit park achterlaat. Ook alle voorzieningen zoals horeca en rustpunten zijn goed. het enige wat jammer is dat dit park maar zo kort geopend is.', 'Review komt van: Trip Advisor')
+createCustomer(2, 'Willem J', 'Sommige kunstwerken blijven lang bij je, vanwege hun extreme emotionaliteit of hun onconventionele perspectief. Het enthousiasme van het personeel is besmettelijk.', 'Review komt van: Trip Advisor')
 
+// Slide through all the available customers currently in the list starting at index 1 instead of 0.
 function testimonialSlides() {
     testimonialIndex++   
     if (testimonialIndex === customers.length) {testimonialIndex = 0} 
@@ -73,8 +74,9 @@ function testimonialSlides() {
     customerImage.src = customers[testimonialIndex].img
     customerName.textContent = customers[testimonialIndex].name
     customerText.textContent = customers[testimonialIndex].text
+    reviewLocation.textContent = customers[testimonialIndex].revLoc
 
-    setTimeout(testimonialSlides, 5000);
+    setTimeout(testimonialSlides, 15000);
   }
 
 testimonialSlides();
