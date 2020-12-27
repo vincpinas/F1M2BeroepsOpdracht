@@ -7,7 +7,7 @@
 
 To navigate through this project you can use the following useful links.
 * ***Trello Board:*** *__[Landing Page Trello Board]__*
-* ***Live Site:***
+* ***Live Site:*** *__[Live Museum Online Landing Page]__*
 
 ---
 The following will be a list of features we made on the site & some other information.
@@ -19,6 +19,7 @@ The following will be a list of features we made on the site & some other inform
 * Light & Dark Mode Switch <span style="color:#FF2319">(Made in week 3/4)</span>
 
 [Landing Page Trello Board]: https://trello.com/b/PJkzGkD8/f1m2-landing-page-amy-vincent
+[Live Museum Online Landing Page]: http://30472.hosts1.ma-cloud.nl/F1M2BO/
 
 #
 #### ****COMMIT EMOJI MEANINGS****
