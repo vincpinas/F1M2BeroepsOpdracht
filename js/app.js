@@ -42,29 +42,31 @@ const customerImage = document.querySelector('#customer-img');
 const customerName = document.querySelector('#customer-name');
 const customerText = document.querySelector('#customer-text');
 const reviewLocation = document.querySelector('#reviewLocation');
+const reviewIcons = document.querySelector('#review-stars');
 let testimonialIndex = 0;
 const customers = [];
 
 // Create a new customer using a constructor
-function Customer(img, name, text, revLoc) {
+function Customer(img, name, text, revLoc, stars) {
     this.img = img
     this.name = name
     this.text = text
     this.revLoc = revLoc
+    this.stars = stars
 }
 
 // Create new customer using the constructor function
-function createCustomer(img, name, text, revLoc) {
+function createCustomer(img, name, text, revLoc, stars) {
 
     let fullImg = `./afbeeldingen/customer-images/customer-${img}.jpg`
-    let customer = new Customer(fullImg, name, text, revLoc)
+    let customer = new Customer(fullImg, name, text, revLoc, stars)
 
     customers.push(customer)
 }
 
-createCustomer(0, 'Ronald S', 'Bezochten het LAM. Wat een prachtig museum. Het gebouw, heel mooi van architectuur, is fraai gelegen in het park. De collectie is heel divers en gelinkt aan het thema voedsel. Mooi gepresenteerd en goed gedocumenteerd.', 'Review komt van: Trip Advisor')
-createCustomer(1, 'Joemate', 'Geweldig evenement en voor al onze mensen een ervaring die een blijvende positieve indruk over dit park achterlaat. Ook alle voorzieningen zoals horeca en rustpunten zijn goed. het enige wat jammer is dat dit park maar zo kort geopend is.', 'Review komt van: Trip Advisor')
-createCustomer(2, 'Willem J', 'Sommige kunstwerken blijven lang bij je, vanwege hun extreme emotionaliteit of hun onconventionele perspectief. Het enthousiasme van het personeel is besmettelijk.', 'Review komt van: Trip Advisor')
+createCustomer(0, 'Ronald S', 'Bezochten het LAM. Wat een prachtig museum. Het gebouw, heel mooi van architectuur, is fraai gelegen in het park. De collectie is heel divers en gelinkt aan het thema voedsel. Mooi gepresenteerd en goed gedocumenteerd.', 'Review komt van: Trip Advisor', '<i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i>')
+createCustomer(1, 'Joemate', 'Geweldig evenement en voor al onze mensen een ervaring die een blijvende positieve indruk over dit park achterlaat. Ook alle voorzieningen zoals horeca en rustpunten zijn goed. het enige wat jammer is dat dit park maar zo kort geopend is.', 'Review komt van: Trip Advisor', '<i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i>')
+createCustomer(2, 'Willem J', 'Sommige kunstwerken blijven lang bij je, vanwege hun extreme emotionaliteit of hun onconventionele perspectief. Het enthousiasme van het personeel is besmettelijk.', 'Review komt van: Trip Advisor', '<i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i>')
 
 // Slide through all the available customers currently in the list starting at index 1 instead of 0.
 function testimonialSlides() {
@@ -75,6 +77,7 @@ function testimonialSlides() {
     customerName.textContent = customers[testimonialIndex].name
     customerText.textContent = customers[testimonialIndex].text
     reviewLocation.textContent = customers[testimonialIndex].revLoc
+    reviewIcons.innerHTML = customers[testimonialIndex].stars
 
     setTimeout(testimonialSlides, 15000);
   }
