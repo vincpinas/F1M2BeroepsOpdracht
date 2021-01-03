@@ -9,8 +9,8 @@
     <link rel="icon" type="img/ico" href="afbeeldingen/logos/LAM-Lisse-Logo-white.ico">
 
     <!-- Scripts. -->
-    <script type="text/javascript" src="js/app.js" defer></script>
-    <script type="text/javascript" src="js/mobilenav.js" defer></script>
+    <script src="js/app.js" defer></script>
+    <script src="js/mobilenav.js" defer></script>
 
     <!-- Style Sheets. -->
     <link rel="stylesheet" href="css/style.css">
@@ -26,14 +26,14 @@
         <div class="overlay__content">
             <a id="Home">Home</a>
             <a id="About">About</a>
-            <a id="">Quiz</a>
-            <a id="">Contact</a>
+            <a>Quiz</a>
+            <a>Contact</a>
             <div>
                 <input type="checkbox" class="checkbox" id="chk">
                 <label class="label" for="chk">
                     <i class="fas fa-sun"></i>
                     <i class="fas fa-moon"></i>
-                    <div class="ball"></div>
+                    <span class="ball"></span>
                 </label>
             </div>
         </div>
@@ -47,8 +47,8 @@
 
 <div class="content">
     <div class="textBox">
-        <h2 id="textlight">lisse art museum<br><span id="textlight">lam</span></h2>
-        <p id="textlight">Heb jij een beetje interesse in kunst?
+        <h2 class="textlight">lisse art museum<br><span class="textlight">lam</span></h2>
+        <p class="textlight">Heb jij een beetje interesse in kunst?
         Het Lisse Art Museum, afgekort het LAM, bied vele soorten verschillende
         kunstwerken aan gekozen door gerespecteerde curators.
         <br> Geschikt voor elke leeftijd, ook leuk voor de familie!
@@ -68,12 +68,12 @@
                 <img src="afbeeldingen/photoslider/plaatje6.jpg" alt="Ingang van het LAM">
                 <div class="text">Wijde ingang voor social distancing!</div>
             </div>
+            <div>
                 <!--Next en Previous buttons-->
                 <a class="prev" onclick="plusSlides(-1)"><i class="fa fa-angle-double-left"></i></a>
                 <a class="next" onclick="plusSlides(1)"><i class="fa fa-angle-double-right"></i></a>
             </div>
         </div>     
-    </div>
 </div>
 </section><!--End First View Content Section-->
 
@@ -81,7 +81,7 @@
 <div class="review-container">
     <div class="customer-card ">
         <img src="afbeeldingen/customer-images/customer-0.jpg" width="150" id="customer-img" class="img-card" alt="">
-        <h4 id="customer-name" class="customer-name-style"></h4>
+        <h4 id="customer-name" class="customer-name-style">Customer Name</h4>
         <div class="review-icons" id="review-stars">
         </div>
         <p id="customer-text"></p>
@@ -94,6 +94,7 @@
 
 
 <section id="about-section">
+    <h2 class="textlight">About</h2>
     <p></p>
 </section><!--End About Section-->
 </body>

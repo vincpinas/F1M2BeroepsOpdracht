@@ -25,7 +25,7 @@ body {
 }
 
 :root {
-  color: white;
+  color: rgb(208, 208, 208);
 }
 
   /* Menu CSS Section */
@@ -335,6 +335,16 @@ body.bodylight {
 .fa-sun {
   color: #f39c12;
 }
+
+/* About Section */
+
+#about-section {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+
 
 /* On Load Animations */
 /* ---------------------------------------------------- */
