@@ -150,6 +150,7 @@ header a:first-child {
     font-size: 36px;
     display: block;
     transition: all 0.3s ease 0s;
+    cursor: pointer;
   }
 
 .overlay a:hover,
@@ -225,6 +226,7 @@ header a:first-child {
   letter-spacing: 1px;
   margin-bottom: 5rem;
   box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.261);
+  cursor: pointer;
 }
 
 .content .textBox a:hover {
@@ -280,7 +282,7 @@ header a:first-child {
 
 /* Light/Dark Mode Switch */
 body.bodylight {
-  background-color: #d3d3d3;
+  background-color: #e9e9e9;
   color: #1c1c1c;
 }
 
@@ -312,7 +314,7 @@ body.bodylight {
 }
 
 .label .ball {
-	background-color: #fff;
+	background-color: #e9e9e9;
 	border-radius: 50%;
 	position: absolute;
 	top: 2px;
