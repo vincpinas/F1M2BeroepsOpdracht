@@ -28,6 +28,10 @@ body {
   color: rgb(208, 208, 208);
 }
 
+ul {
+  list-style: none;
+}
+
   /* Menu CSS Section */
 #content-section {
   position: relative;
@@ -243,7 +247,7 @@ header a:first-child {
   justify-content: center;
   color: rgb(209, 209, 209);
   text-align: center;
-  background-color: rgb(24, 24, 24);
+  background-color: #181818;
 }
 
  .customer-card{
@@ -344,9 +348,84 @@ body.bodylight {
   margin-top: 2rem;
   display: flex;
   justify-content: center;
+  background-color: #181818;
 }
 
+/* Quiz Section */
+#quiz-section {
+  margin-top: 5rem;
+  background-color: #181818;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+.quizContainer {
+  width: 80%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.quizContainer img {
+  margin-top: -60px;
+  width: 130px;
+  height: 130px;
+}
+
+.quizTitle {
+  margin-top: -20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 0.7;
+}
+
+.quizQuestion {
+  font-size: 0.9em;
+  margin-bottom: 5px;
+}
+
+.quizHint {
+  font-size: 0.8em;
+  margin-bottom: 50px;
+}
+
+.quizAnswer {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.answer {
+  background-color: rgb(29, 29, 29);
+  margin-right: 30px;
+  margin-bottom: 30px;
+  padding: 20px 35px;
+  border-radius: 5px;
+  transition: all .3s ease-out;
+  box-shadow: 1px 1px 18px #272727;
+}
+
+.answer:hover {
+  color: #0062be;
+}
+
+.resultBox {
+  display: flex;
+  padding: 1rem;
+  color: #1c1c1c;
+  background-color: #d3d3d3;
+  margin-bottom: 30px;
+}
+
+.resultText {
+  font-weight: bold;
+  max-width: 400px;
+  text-align: start;
+}
 
 /* On Load Animations */
 /* ---------------------------------------------------- */

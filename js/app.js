@@ -102,24 +102,123 @@ chk.addEventListener('change', () => {
 
 // SMOOTH SCROLLING
 // About Section
-const readmore = document.getElementById('readmore');
 const menuabout = document.getElementById('About')
 const aboutsection = document.querySelector("#about-section");
 
 menuabout.addEventListener('click', () => {
-  aboutsection.scrollIntoView({behavior: 'smooth', block: 'end'})
-});
-
-readmore.addEventListener('click', () => {
   aboutsection.scrollIntoView({behavior: 'smooth', block: 'end'});
 });
 
 
-
-// Home
+// Home Section
 const Home = document.getElementById('Home');
 const startsection = document.querySelector("#content-section");
 
 Home.addEventListener('click', () => {
-  startsection.scrollIntoView({behavior:'smooth', block: 'start'})
+  startsection.scrollIntoView({behavior:'smooth', block: 'end'});
 });
+
+
+// Quiz Section
+const QuizSectionLink = document.getElementById('Quiz');
+const doQuiz = document.getElementById('readmore');
+const QuizSection = document.querySelector('#quiz-section');
+
+doQuiz.addEventListener('click', () => {
+  QuizSection.scrollIntoView({behavior: 'smooth', block: 'end'});
+});
+
+QuizSectionLink.addEventListener('click', () => {
+  QuizSection.scrollIntoView({behavior: 'smooth', block: 'end'});
+})
+
+
+
+// QUIZ LOGIC
+// Grab HTML Elements
+const quizImage = document.getElementById('quizImage');
+const quizTitle = document.getElementById('quizTitle');
+const quizQuestion = document.getElementById('quizQuestion');
+const questionBox = document.getElementById('questionBox');
+const resultBox = document.getElementById('resultBox');
+const quizHint = document.getElementById('quizHint')
+const resultImage = document.getElementById('resultImage')
+const resultText = document.getElementById('resultText')
+
+// Javascript Objects
+const questionDelay = 1000;
+let done = 0;
+let counter = 0;
+let playerData = {};
+
+quizImage.src = QuizData.quizMetaData.ImageURL
+
+// functions
+const initQuiz = () => {
+  playerData.pointsFirst = 0;
+  playerData.pointsSecond = 0;
+  playerData.pointsThird = 0;
+  playerData.pointsFourth = 0;
+  resultBox.style.display = "none";
+  quizTitle.innerHTML = QuizData.quizMetaData.title
+  prepareQuestions();
+}
+
+const prepareQuestions = () => {
+  questionBox.className = "questionBox-new";
+  QuizData.answerClicked = false;
+
+  if (counter < QuizData.quizContent.length) {
+    quizQuestion.innerHTML = "<span style='color:#f15025;'>Vraag: </span>" + QuizData.quizContent[counter].question;
+    quizHint.innerHTML = "<span style='color:#0062be;'>Hint: </span>" + QuizData.quizContent[counter].hint;
+    quizAnswer.innerHTML = "";
+    for (let i = 0; i < QuizData.quizContent[counter].answers.length; i++) {
+      let answer = document.createElement('li');
+      answer.className = "answer";
+      answer.score = QuizData.quizContent[counter].answers[i].feedback;
+      answer.innerHTML = QuizData.quizContent[counter].answers[i].answer;
+      quizAnswer.appendChild(answer);
+      answer.addEventListener('click', evaluate, true)
+    }
+  } else {
+    finishQuiz();
+  }
+}
+
+const evaluate = (evt) => {
+  if(!QuizData.answerClicked) {
+    if(evt.target.score === 1) {
+      playerData.pointsFirst += 1;
+    } else if (evt.target.score === 2) {
+      playerData.pointsSecond += 1
+    } else if (evt.target.score === 3) {
+      playerData.pointsThird += 1
+    } else if (evt.target.score === 4) {
+      playerData.pointsFourth += 1
+    }
+    QuizData.answerClicked = true;
+    console.log("+1 Point for", playerData.playerName, "current points: ", playerData)
+  }
+  counter++;
+  setTimeout(prepareQuestions, questionDelay)
+}
+
+const finishQuiz = () => {
+  questionBox.style.display = "none";
+  resultBox.style.display = "flex";
+  done + 1
+  let arr = Object.values(playerData)
+  let highestscore = Math.max(...arr);
+  console.log(highestscore)
+  if (playerData.pointsFirst == highestscore) {
+    resultText.innerHTML = QuizData.quizEndingData.text.ending1
+  } else if (playerData.pointsSecond == highestscore) {
+    resultText.innerHTML = QuizData.quizEndingData.text.ending2
+  } else if (playerData.pointsThird == highestscore) {
+    resultText.innerHTML = QuizData.quizEndingData.text.ending3
+  } else if (playerData.pointsFourth == highestscore) {
+    resultText.innerHTML = QuizData.quizEndingData.text.ending4
+  }
+}
+
+initQuiz()

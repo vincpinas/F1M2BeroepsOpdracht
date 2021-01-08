@@ -9,6 +9,7 @@
     <link rel="icon" type="img/ico" href="afbeeldingen/logos/LAM-Lisse-Logo-white.ico">
 
     <!-- Scripts. -->
+    <script src="js/QuizData.js" defer></script>
     <script src="js/app.js" defer></script>
     <script src="js/mobilenav.js" defer></script>
 
@@ -26,7 +27,7 @@
         <div class="overlay__content">
             <a id="Home">Home</a>
             <a id="About">About</a>
-            <a>Quiz</a>
+            <a id="Quiz">Quiz</a>
             <a>Contact</a>
             <div>
                 <input type="checkbox" class="checkbox" id="chk">
@@ -53,7 +54,7 @@
         kunstwerken aan gekozen door gerespecteerde curators.
         <br> Geschikt voor elke leeftijd, ook leuk voor de familie!
         </p>
-        <a id="readmore">Read More</a>
+        <a id="readmore">Do The Quiz!</a>
     </div>
         <div class="slider"> <!--hier is de slide show-->
             <div class="mySlides fade">
@@ -94,8 +95,22 @@
 
 
 <section id="about-section">
-    <h2 class="textlight">About</h2>
-    <p></p>
 </section><!--End About Section-->
+
+<section id="quiz-section">
+    <div class="quizContainer">
+        <img src="" alt="Quiz Image" id="quizImage">
+        <h2 class="quizTitle" id="quizTitle"></h2>
+        <div class="questionBox" id="questionBox">
+            <p class="quizQuestion" id="quizQuestion"></p>
+            <p class="quizHint" id="quizHint"></p>
+            <ul class="quizAnswer" id="quizAnswer"></ul>
+        </div>
+        <div class="resultBox" id="resultBox">
+            <p class="resultText" id="resultText"></p>
+            <img src="" alt="Quiz Result Image" id="resultImage">
+        </div>
+    </div>
+</section>
 </body>
 </html>
