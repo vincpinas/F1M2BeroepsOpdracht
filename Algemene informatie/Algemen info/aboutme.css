@@ -1,0 +1,27 @@
+* {
+padding: 0;
+margin: 0px;
+font-family:"Poppins", sans-serif;
+box-sizing: border-box;
+}
+body {
+    height: 100vh;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    background-color: #1c1c1c;
+    }
+
+body {
+  --nav-load: 500ms;
+  --nav-link-load: 400ms;
+  --article-load-delay: calc(var(--nav-load) + var(var(--nav-link-load)))
+}
+
+:root {
+  color: rgb(208, 208, 208);
+}
+
+ul {
+  list-style: none;
+}
