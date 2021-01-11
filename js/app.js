@@ -146,7 +146,7 @@ const resultImage = document.getElementById('resultImage')
 const resultText = document.getElementById('resultText')
 
 // Javascript Objects
-const questionDelay = 1000;
+const questionDelay = 500;
 let done = 0;
 let counter = 0;
 let playerData = {};
@@ -197,7 +197,6 @@ const evaluate = (evt) => {
       playerData.pointsFourth += 1
     }
     QuizData.answerClicked = true;
-    console.log("+1 Point for", playerData.playerName, "current points: ", playerData)
   }
   counter++;
   setTimeout(prepareQuestions, questionDelay)
@@ -212,12 +211,16 @@ const finishQuiz = () => {
   console.log(highestscore)
   if (playerData.pointsFirst == highestscore) {
     resultText.innerHTML = QuizData.quizEndingData.text.ending1
+    resultImage.src = QuizData.quizEndingData.images.image1
   } else if (playerData.pointsSecond == highestscore) {
     resultText.innerHTML = QuizData.quizEndingData.text.ending2
+    resultImage.src = QuizData.quizEndingData.images.image2
   } else if (playerData.pointsThird == highestscore) {
     resultText.innerHTML = QuizData.quizEndingData.text.ending3
+    resultImage.src = QuizData.quizEndingData.images.image3
   } else if (playerData.pointsFourth == highestscore) {
     resultText.innerHTML = QuizData.quizEndingData.text.ending4
+    resultImage.src = QuizData.quizEndingData.images.image4
   }
 }
 

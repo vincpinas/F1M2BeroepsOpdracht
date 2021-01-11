@@ -4,8 +4,8 @@ const QuizData = {
     { title: "Lisser Art Museum Quiz", ImageURL: "https://www.lamlisse.nl/wp-content/uploads/2018/03/LAM-Lisse-logo-white.svg" },
     quizEndingData: 
     {
-        images: { image1: "", image2: "", image3: "", image4: "" },
-        text: { ending1: "Je bent vrij negatief en vind het allemaal een beetje saai.", ending2: "Je staat blij in het leven en je staat open om vrijwel alles te doen.", ending3: "Je weet het nog allemaal niet zo goed en moet nog jou eigen kijk op alles ontdekken.", ending4: "Je hebt niet echt een mening je vind het allemaal wel goed."}
+        images: { image1: "./afbeeldingen/quiz_afbeeldingen/abstract.jpg", image2: "./afbeeldingen/quiz_afbeeldingen/Blij.jpeg", image3: "./afbeeldingen/quiz_afbeeldingen/random.jpg", image4: "./afbeeldingen/quiz_afbeeldingen/somber.jpg" },
+        text: { ending1: "Je bent vrij negatief en vind het allemaal een beetje saai, dit kunstwerk ben jij.", ending2: "Je staat blij in het leven en je staat open om vrijwel alles te doen, dit kunstwerk ben jij!", ending3: "Je weet het nog allemaal niet zo goed en moet nog jou eigen kijk op alles ontdekken, dit kunstwerk ben jij.", ending4: "Je hebt niet echt een mening je vind het allemaal wel goed, dit kunstwerk ben jij."}
     },
 
     quizContent: [
