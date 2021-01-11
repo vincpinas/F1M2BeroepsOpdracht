@@ -188,6 +188,7 @@ header a:first-child {
   animation-delay: calc(var(--nav-link-load) + var(--nav-load) + 500ms);
   opacity: 0;
   animation-fill-mode: forwards;
+  margin-right: 10rem;
 }
 
 .slider {
