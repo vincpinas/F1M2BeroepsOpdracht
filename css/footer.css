@@ -1,8 +1,9 @@
-*,*: before,*after{
+*,*::before,*::after{
     box-sizing: border-box;
 }
 
 footer{
+    margin-top: 5rem;
     display: -webkit- flex;
     display: -moz- flex;
     display: -ms- flex;
@@ -10,7 +11,8 @@ footer{
     display: flex;
     flex-flow: row wrap;
     padding: 50px;
-    color: white;
+    color: #f1f1f1;
+    background-color: rgb(24, 24, 24);
 }
 .Contact{
     padding: 0;
