@@ -136,6 +136,7 @@ QuizSectionLink.addEventListener('click', () => {
 
 // QUIZ LOGIC
 // Grab HTML Elements
+const calltoaction = document.getElementById('Tickets');
 const quizImage = document.getElementById('quizImage');
 const quizTitle = document.getElementById('quizTitle');
 const quizQuestion = document.getElementById('quizQuestion');
@@ -222,6 +223,7 @@ const finishQuiz = () => {
     resultText.innerHTML = QuizData.quizEndingData.text.ending4
     resultImage.src = QuizData.quizEndingData.images.image4
   }
+
 }
 
 initQuiz()

@@ -401,6 +401,22 @@ body.bodylight {
   justify-content: center;
   align-items: center;
 }
+#Tickets{
+  margin-left: 40px;
+  color: #1c1c1c;
+  background-color: rgb(31, 31, 31);
+  border: 2px solid rgb(34, 34, 34);
+  color: rgb(228, 228, 228);
+  border-radius: 5px;
+  padding: 8px 20px;
+  transition: all 0.8s ease 0s;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.261);
+  cursor: pointer;
+  
+}
 
 .quizContainer {
   width: 80%;
