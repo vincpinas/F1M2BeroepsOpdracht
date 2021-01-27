@@ -360,6 +360,10 @@ body.bodylight {
   flex-direction: column;
 }
 
+iframe {
+  border: 0;
+}
+
 .bezoeklam-intro {
   display: flex;
   margin-bottom: 5rem;
@@ -415,7 +419,6 @@ body.bodylight {
   letter-spacing: 1px;
   box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.261);
   cursor: pointer;
-  
 }
 
 .quizContainer {

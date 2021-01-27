@@ -35,8 +35,6 @@ function showSlides(n){
 }
 
 
-
-
 // REVIEW SLIDER
 const customerImage = document.querySelector('#customer-img');
 const customerName = document.querySelector('#customer-name');
@@ -86,8 +84,6 @@ function testimonialSlides() {
 testimonialSlides();
 
 
-
-
 // Light & Dark Mode Switch
 const chk = document.getElementById('chk');
 const article = document.querySelector('.textlight')
@@ -96,8 +92,6 @@ chk.addEventListener('change', () => {
     document.body.classList.toggle('bodylight');
     article.classList.toggle('light')
 });
-
-
 
 
 // SMOOTH SCROLLING
